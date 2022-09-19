@@ -26,6 +26,11 @@ npm install
 npm run dev
 ```
 
+### Run unit tests
+```
+npm run dev
+```
+
 ### Compiles and minifies for production
 ```
 nuxt generate

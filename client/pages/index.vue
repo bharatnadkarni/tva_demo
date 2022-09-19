@@ -132,8 +132,6 @@ export default {
 
           this.yRange = Math.max.apply(Math, yRangeArray)
 
-          console.log('yRange Valcs -- ', this.yRange)
-
           this.selected_day = response.data.data.today
           this.select_day(this.selected_day)
           this.loading = false
@@ -150,7 +148,6 @@ export default {
           ...el,
         }
       })
-      console.log('STR --- ', this.structuredData)
       this.magnitudeData = this.structuredData
         .sort((a, b) => {
           return a.magnitude - b.magnitude
