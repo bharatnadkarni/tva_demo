@@ -20,7 +20,7 @@ const get_data = async (req, res) =>{
         let last = new Date(todate.setDate(end_date)).toISOString().substring(0,10)
 
         let asteroid_data = await Asteroids.find({date: {$gte: new Date(first), $lte: new Date(last)}}).sort({date: 1}).lean()
-        post_message(res, {data: asteroid_data, today: today == 0 ? 6 : today + 1}, "Data fetched successfully")
+        post_message(res, {data: asteroid_data, today: today == 0 ? 6 : today - 1}, "Data fetched successfully")
 
     } catch (error) {
         console.log(error)
