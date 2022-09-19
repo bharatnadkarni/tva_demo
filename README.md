@@ -11,6 +11,11 @@ The TVA Demo application consists of 2 parts - the client built in Vue (Nuxt.js)
 sudo npm install -g nuxt
 ```
 
+### cd into client folder
+```
+cd client
+```
+
 ### Project setup
 ```
 npm install
@@ -28,6 +33,10 @@ nuxt generate
 
 ## BACKEND SERVER
 
+### cd into backend folder
+```
+cd backend
+```
 
 ### Project setup
 ```
