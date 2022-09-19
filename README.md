@@ -1,5 +1,7 @@
 # TVA DEMO APPLICATION
 
+You can access the demo at https://tva.mystaginghub.com
+
 The TVA Demo application consists of 2 parts - the client built in Vue (Nuxt.js) and the backend server built in Node.js (Express.js). Database used is MongoDb. The database is hosted in a cloud instance so you will not require to install a database for running this code. Each of the folders are deployed separately. Please find below the deploy instructions for each -
 
 
