@@ -34,8 +34,8 @@
               </div>
             </v-item-group>
           </v-col>
-          <v-col cols="12" md="6" sm="12" class="legend_col">
-            <h4 class="diameter" :class="$vuetify.breakpoint.smAndDown ? `mt-10` : ``">DIAMETER</h4>
+          <v-col cols="12" md="6" sm="12" class="legend_col" :class="$vuetify.breakpoint.smAndDown ? `mt-10` : ``">
+            <h4 class="diameter">DIAMETER</h4>
             <div id="legend"></div>
           </v-col>
           </v-row>
@@ -44,6 +44,7 @@
           <h4>Loading...</h4>
         </div>
         <chart-view
+          :class="$vuetify.breakpoint.smAndDown ? `mt-10` : ``"
           v-if="structuredData.length > 0"
           :structuredData="structuredData"
           :xRange="xRange"
