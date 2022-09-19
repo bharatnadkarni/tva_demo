@@ -53,7 +53,7 @@ export default {
 
       this.chart
         .data([
-          { d: '<label><img src="/arrow-up.png"/> DISTANCE (au)</label>' },
+          { d: '<label><img src="/arrow-up.svg"/> DISTANCE (au)</label>' },
         ])
         .append('foreignObject')
         .attr('class', 'distance_text')
@@ -67,7 +67,7 @@ export default {
 
       this.chart
         .data([
-          { d: '<label><img src="/arrow-right.png"/> VELOCITY (km/s)</label>' },
+          { d: '<label><img src="/arrow-right.svg"/> VELOCITY (km/s)</label>' },
         ])
         .append('foreignObject')
         .attr('class', 'distance_text')
@@ -216,7 +216,7 @@ export default {
       this.tooltip
         .style('opacity', 1)
         .html(
-          `Name: ${data.name}<br/>Diameter: ${data.diameter} km<br/>Magnitude: ${data.magnitude} h<br/>Distance: ${data.distance} au<br/>Velocity: ${data.velocity} km/s`
+          `Name: ${data.name}<br/>Diameter: ${data.diameter.toFixed(3)} km<br/>Magnitude: ${data.magnitude.toFixed(3)} h<br/>Distance: ${data.distance.toFixed(3)} au<br/>Velocity: ${data.velocity.toFixed(3)} km/s`
         )
         .style('left', x + 'px')
         .style('top', y + 'px')

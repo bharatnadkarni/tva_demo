@@ -14,10 +14,10 @@
           >Name: {{ item.name }}</v-list-item-title
         >
         <v-list-item-title class="magnitude_list_text"
-          >Diameter: {{ item.diameter }}</v-list-item-title
+          >Diameter: {{ item.diameter.toFixed(3) }} km</v-list-item-title
         >
         <v-list-item-title class="magnitude_list_text"
-          >Magnitude: {{ item.magnitude }}</v-list-item-title
+          >Magnitude: {{ item.magnitude.toFixed(3) }} h</v-list-item-title
         >
       </v-list-item-content>
     </v-list-item>

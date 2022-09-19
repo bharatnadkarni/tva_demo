@@ -158,3 +158,6 @@ label>img {
     position: absolute;
     top: 0;
 }
+.v-list-item__icon{
+    margin-right: 20px !important;
+}
