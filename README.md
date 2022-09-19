@@ -30,7 +30,7 @@ npm run dev
 
 ### Run unit tests
 ```
-npm run dev
+npm test
 ```
 
 ### Compiles and minifies for production
