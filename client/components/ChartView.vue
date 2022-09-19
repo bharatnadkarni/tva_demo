@@ -1,8 +1,8 @@
 <template>
-  <div id="chart" class="pa-4"></div>
+  <div id="chart" ref="chart" class="pa-4"></div>
 </template>
 <script>
-import * as d3 from 'd3'
+import * as d3 from 'd3/dist/d3.min'
 export default {
   props: ['structuredData', 'xRange', 'yRange'],
   data() {
@@ -19,6 +19,9 @@ export default {
       this.draw_bubbles()
     },
   },
+  created(){
+    
+  },
   mounted() {
     this.render_chart()    
     window.addEventListener('resize', ()=>{
@@ -30,7 +33,7 @@ export default {
       d3.selectAll('#chart svg').remove()
       const margin = { top: 30, right: 40, bottom: 30, left: 40 }
       const height = 400 - margin.top - margin.bottom
-      const width = document.getElementById('chart').offsetWidth - margin.left - margin.right
+      const width = this.$refs.chart.offsetWidth- margin.left - margin.right
 
       this.chart = d3
         .select('#chart')

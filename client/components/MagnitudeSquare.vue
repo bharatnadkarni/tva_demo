@@ -2,7 +2,7 @@
     <div :id="`magnitude_${day}_${this.index}`"></div>
 </template>
 <script>
-import * as d3 from 'd3'
+import * as d3 from 'd3/dist/d3.min'
 export default {
     props: ['day','index', 'value', 'max'],
     data(){

@@ -81,7 +81,7 @@
 </template>
 
 <script>
-import * as d3 from 'd3'
+import * as d3 from 'd3/dist/d3.min'
 import MagnitudeList from '~/components/MagnitudeList.vue'
 import ChartView from '~/components/ChartView.vue'
 
